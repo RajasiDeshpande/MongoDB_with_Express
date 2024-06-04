@@ -1,0 +1,23 @@
+.chat{
+    background-color:aliceblue;
+    padding: 20px;
+    border-radius: 16px;
+    display: inline-block;
+}
+.msg{
+    background-color: dodgerblue;
+    color:white;
+    padding: 20px;
+    border-radius: 16px;
+}
+.from{
+    font-style: italic;
+}
+.to{
+    font-style: italic;
+}
+.btn1{
+    border-radius: 10px;
+    color: black;
+    background-color: yellow;
+}
