@@ -61,3 +61,9 @@ app.put("/chats/:id",async(req,res)=>{
     let updatedChat=await Chat.findByIdAndUpdate(id,{msg:newMsg},{runValidators:true,new:true});
     res.redirect("/chats");
 })
+app.delete("/chats/:id",async(req,res)=>{
+    let {id}=req.params;
+    let deletedchat=await Chat.findByIdAndDelete(id);
+    console.log(deletedchat);
+    res.redirect("/chats");
+})
