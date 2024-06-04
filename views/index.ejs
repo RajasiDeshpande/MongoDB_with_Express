@@ -14,10 +14,10 @@
     <%for(let chat of chats){%>
         <div class="chat">
             <p class="from">From : <%=chat.from%></p>
-            <div>
-                <p class="msg">Message : <%=chat.msg%></p>
+            <div class="msg">
+                <p>Message : <%=chat.msg%></p>
                 <form method="get" action="/chats/<%=chat._id%>/edit">
-                    <button>edit</button>
+                    <button class="btn1">edit</button>
                 </form>
             </div>
             <p class="to">Recieved By : <%=chat.to%></p>
